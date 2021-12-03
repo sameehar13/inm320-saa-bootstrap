@@ -1,0 +1,105 @@
+/* Mobile First Styling */
+
+/* Font */
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Page Container */
+.container-fluid{
+  background-color: #F7F8FC;
+}
+
+/* Top Bar */
+.vl-right {
+  border-right: 1px solid lightgray;
+  padding-right: 5px;
+}
+
+.space-right {
+  padding-right: 15px;
+}
+
+/* Graph */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  max-width: 95%;
+}
+
+.graph-col {
+  background-color: white;
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.card-active {
+  border: 2px solid #3751FF;
+  color:#3751FF;
+}
+
+.graph-data{
+  font-size: 0.7rem;
+}
+
+/* Content Pieces */
+.list-group-item-check {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+.list-group-item-check:hover + .list-group-item {
+  background-color: var(--bs-light);
+}
+.list-group-item-check:checked + .list-group-item {
+  color: #fff;
+  background-color: var(--bs-blue);
+}
+.list-group-item-check[disabled] + .list-group-item,
+.list-group-item-check:disabled + .list-group-item {
+  pointer-events: none;
+  filter: none;
+  opacity: .5;
+}
+
+.task-border{
+  border: hidden;
+}
+
+.content-font{
+  font-size: 0.8rem;
+}
+
+
+/* Desktop Styling */
+
+@media (min-width: 768px){
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: #363740;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 100; 
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+
+  .nav-pills .nav-link.active {
+    background-color: #363740;
+  }
+
+  .nav-link.active {
+    width: 100%;
+  }
+
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
