@@ -1,0 +1,13 @@
+{
+  "name": "assignment6_bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Sameeha Raiba",
+  "license": "private",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
